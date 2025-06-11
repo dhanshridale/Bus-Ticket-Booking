@@ -1,0 +1,61 @@
+.about{
+  margin-top: 90px;
+  background: rgba(141, 187, 233, 0.24);
+  padding: 2px;
+
+}
+.about-content{
+  font-size: 20px;
+  padding: 15px;
+}
+p {
+  font-family: 'Times New Roman','Roboto';
+  font-size: 16px;  /* Base size for good readability */
+  line-height: 1.6; /* Adequate line spacing for easy reading */
+
+  margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+.team-member-image{
+ 
+  height: 250px;
+  
+}
+.team-title{
+
+  text-align: center;
+}
+.team-members{
+  display: flex;
+  padding: 10px;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.team-member-card {
+  border: 2px solid rgba(0, 0, 0, 0.349); /* Initial solid border */
+  border-radius: 10px; /* Adds rounded corners */
+  overflow: hidden; /* Ensures content stays inside rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.team-member-card:hover {
+  transform: scale(1.05); /* Slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for hover effect */
+  border-color: rgba(31, 102, 173, 0.6); /* Stylish blue border on hover */
+  cursor: pointer; /* Indicates interactivity */
+}
+.team-member-content{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.team-member-description{
+  
+  text-align: center;
+}

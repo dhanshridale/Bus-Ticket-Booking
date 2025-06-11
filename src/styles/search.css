@@ -1,0 +1,178 @@
+/* Container Styles */
+.container {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+/* Input Box */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  min-width: 250px;
+  position: relative; /* Allows for icons inside inputs */
+}
+
+/* Transparent Input Styles (Text and Date) */
+.input-box input[type="text"], 
+.input-box input[type="date"] {
+  border: 2px solid rgba(255, 255, 255, 0.6); /* Subtle white border with transparency */
+  outline: none;
+  font-size: 18px;
+  border-radius: 8px;
+  min-height: 50px;
+  padding: 10px 15px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+  color: #fff; /* White text for better readability */
+  width: 100%;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(5px); /* Safari support for frosted effect */
+  padding-left: 40px; /* Space for optional icons */
+}
+
+/* Placeholder Styling */
+.input-box input::placeholder {
+  color: rgba(255, 255, 255, 0.7); /* Subtle placeholder color */
+  font-style: italic;
+  font-size: 16px;
+}
+
+/* Hover Effect for Transparent Inputs */
+.input-box input[type="text"]:hover, 
+.input-box input[type="date"]:hover {
+  border-color: rgba(239, 83, 80, 0.8); /* Highlighted border with a red tone */
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly less transparent on hover */
+}
+
+/* Focus Effect for Transparent Inputs */
+.input-box input[type="text"]:focus, 
+.input-box input[type="date"]:focus {
+  border-color: rgba(239, 83, 80, 1); /* Bold red border on focus */
+  box-shadow: 0 0 8px rgba(239, 83, 80, 0.5); /* Subtle glow effect */
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter on focus */
+}
+
+/* Search Button */
+.search-btn {
+  background-color: #ef5350;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Book Now Button */
+.book-btn {
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 16px;
+  display: block;
+  margin-top: 10px;
+  position: absolute;
+  right: 10px;
+  top:100px;
+}
+
+.book-btn:hover {
+  background-color: #2e7d32;
+}
+
+/* Bus Results List */
+.bus-results ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.bus-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap:10px;
+  position: relative;
+  
+  /* border:2px solid red ; */
+}
+.bus-item:hover{
+  transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.bus-container{
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.bus-image {
+  width: 250px;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+
+  /* margin-bottom: 15px; */
+}
+
+.bus-item h3 {
+  
+  margin: 0;
+  font-size: 17px;
+  color: #666;
+}
+
+.bus-item p {
+  font-size: 20px;
+  color: #666;
+  margin-left: 20px;
+ 
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .input-box {
+      margin-bottom: 10px;
+  }
+
+  .input-box input,
+  .search-btn,
+  .book-btn {
+      width: 100%; /* Full-width on smaller screens */
+  }
+
+  .bus-item {
+      width: 100%;
+  }
+
+  .bus-btn {
+      font-size: 14px;
+
+  }
+}

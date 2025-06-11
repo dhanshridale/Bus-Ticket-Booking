@@ -1,0 +1,27 @@
+[
+  {
+    "username": "existinguser",
+    "email": "existing@example.com",
+    "password": "existingpassword"
+  },
+  {
+    "username": "safaf",
+    "email": "sdfsadf@gmail.com",
+    "password": "sfsdfsd"
+  },
+  {
+    "username": "Aditya",
+    "email": "mishra@gmail.com",
+    "password": "mishra"
+  },
+  {
+    "username": "govind",
+    "email": "mishra.adi663@gmail.com",
+    "password": "govind"
+  },
+  {
+    "username": "anshuman pandey",
+    "email": "anshumnapandey4856@gmail.com",
+    "password": "5646541653"
+  }
+]

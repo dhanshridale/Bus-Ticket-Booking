@@ -1,0 +1,155 @@
+/* General Container */
+.login-container {
+    display: flex;
+    /* margin-top: 50px; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #6f7c8c91, #4d6a8b3a); */
+    background: rgba(141, 187, 233, 0.24);
+
+    overflow: hidden;
+    
+  }
+  
+  /* Box containing login and register sections */
+  .login-box {
+    display: flex;
+    width: 85%;
+    margin-top: 30px;
+    max-width: 1000px;
+    height: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;  /* Smooth hover effect */
+  }
+  
+  .login-box:hover {
+    transform: scale(1.05);  /* Slight zoom effect when hovering over the box */
+  }
+  
+  /* Left side (Register section) */
+  .login-left {
+    flex: 1;
+    background-color: #f2f7f9;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #ddd;
+    border-radius: 12px 0 0 12px; /* Rounded corners on left side */
+    transition: all 0.3s ease;  /* Smooth effect */
+  }
+  
+  .login-left h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-left p {
+    margin-bottom: 30px;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .login-left form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-left form input:focus {
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);  /* Focus effect */
+  }
+  
+  .login-left form button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-left form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .login-left form button:active {
+    background-color: #004085;
+  }
+  
+  /* Right side (Login section) */
+  .login-right {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 12px 12px 0; /* Rounded corners on the right side */
+    transition: all 0.3s ease;  /* Smooth effect */
+  }
+  
+  .login-right h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .login-right form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .login-right form input:focus {
+    border: 1px solid #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.3);  /* Focus effect */
+  }
+  
+  .login-right form button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-right form button:hover {
+    background-color: #218838;
+  }
+  
+  .login-right form button:active {
+    background-color: #1e7e34;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .login-box {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+    
+    .login-left, .login-right {
+      border-right: none;
+      border-bottom: 2px solid #ddd;
+    }
+  }
+  
